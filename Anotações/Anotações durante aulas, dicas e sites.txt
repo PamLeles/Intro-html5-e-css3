@@ -1,0 +1,414 @@
+s- HTML
+HTML abreviação para a expressão inglesa 
+HyperText Markup Language, que significa:
+ "Linguagem de Marcação de Hipertexto" é uma linguagem
+ de marcação utilizada na construção de páginas na Web.
+ Documentos HTML podem ser interpretados por navegadores.
+
+- Comando no HTML
+ <!DOCTYPE html> Está declaração define que este 
+documento é um documento HTML5;
+<html> O elemento <html> é o elemento raiz de uma
+ página HTML;
+<head> O elemento head contém meta-informações 
+sobre a página HTML;
+<title> O elemento title especifica um título para 
+a página HTML (que é mostrado na barra de título do 
+navegador ou na guia da página);
+<body> O elemento body define o corpo do documento
+ e ele receberá todo o conteúdo visível, 
+como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc.
+<h1>, <h2>, <h3>, <h4> são elementos que definem um título,
+ h1 sendo o maior titulo;
+<p> Elemento que define o parágrafo.
+
+***exemplo:
+ <!DOCTYPE html>
+<html>
+<head>
+<title> Título da pág </title>
+</head>
+<body>
+
+<h1> Meu Primeiro Título </h1>
+<p>Meu primeiro Parágrafo.</p>
+
+</body>
+</html> 
+
+- Adicinando Links no HTML
+
+Utilizando a tag <a></a>
+ <a href = " https://www.w3schools.com" > Esse é um link</a>
+Você pode utiliza a tag Target = "_blank" para que o link abra
+uma nova aba.
+ *** exemplo:
+<a href = "https://www.w3schools.com" target="_blank">  clique aqui para saber mais </a>
+
+-Adicionando Imagens no HTML
+
+Utilizando a tag <img>
+dentro da tag img, iremos adicionar o comando src para inseriar a imagem
+<img src="html5.jpeg">
+além do comando srcm utilizamos também o comando alt para caso de algum 
+erro no site ou na foto irá aparecer uma descrição do que deveria 
+aparecer no local da imagem.
+
+***exemplo:
+<img src="html5.jpeg" alt="imagem da logo HTML5">
+ -caso a imagens esteja dentro de um pasta, basta fazer da seguinte forma,
+antes da escrever somente o  nome da imagem que está salva, 
+escreva o nome da página
+com o / no final
+***exemplo:
+<img src="img/html5.jpeg" alt="Imagem do símbolo html5" >
+
+ --- Boas Práticas no HTML----
+ - HTML Semântico
+O HTML semântico tem como objetivo descrever o significado
+ do conteúdo presente em documentos HTML, tornando-o 
+mais claro tanto para programadores quanto para 
+browsers e outras engines que processam essa 
+informação
+
+<header> O header é utilizado para representar o cabeçalho de um 
+documento ou seção declarado no HTML. Nele podemos inserir elementos 
+de <h1> a <h6>, até elementos para representar imagens, parágrafos ou 
+mesmo listas de navegação.
+***exemplo:
+<header>
+     <h1>Título da página</h1>
+     <h2>Subtítulo da página</h2>
+</header>
+***
+<section> O elemento section representa uma seção dentro de um 
+documento e geralmente contém um título, o qual é definido por meio de
+um dos elementos entre <h1> e <h6>. Podemos utilizar o <section>,
+ por exemplo, para descrever as seções/tópicos de um documento.
+***exemplo:
+<section>
+    <h3>Seção 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+</section>
+***
+<article> Utilizamos o elemento article quando precisamos declarar um conteúdo 
+que não precisa de outro para fazer sentido em um documento HTML, 
+por exemplo, um artigo em um blog. É recomendado identificar cada 
+article com um título.
+***exemplo:
+
+<article>
+    <h3>Título do artigo 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+</article>
+<article>
+    <h3>Título do artigo 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+</article>
+***
+<nav> O elemento nav é utilizado quando precisamos representar um
+ agrupamento de links de navegação, que, por sua vez, são criados com os 
+elementos <ul>, <li> e <a>.
+***exemplo:
+
+<nav>
+ <ul>
+ <li><a href=”#”>pagina 1</a></li>
+ <li><a href=”#”>pagina 2</a></li>
+ <li><a href=”#”>pagina 3</a></li>
+ <li><a href=”#”>pagina 4</a></li>
+ </ul>
+</nav>
+****
+<aside>20:38 07/02/2022 O elemento <aside> é utilizado quando precisamos criar um 
+conteúdo de apoio/adicional ao conteúdo principal. Por exemplo, ao falar de 
+HTML semântico, podemos indicar ao leitor outros conteúdos sobre a
+ linguagem HTML como sugestão de leitura complementar.
+***exemplo:
+
+<aside>
+  <nav>
+    <ul>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li>Link 4</li>
+     </ul>
+  </nav>
+</aside>
+
+***
+
+<main> O elemento main especifica o conteúdo principal e, 
+consequentemente, de maior relevância dentro da página.
+ Para ser considerada bem construída, uma página deve apresentar 
+apenas um conteúdo principal. 
+
+***exemplo:
+<main>
+  <h2>Titulo</h2>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ...</p>
+
+  <article>
+     <h3>Subtítulo</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum...</p>
+   </article>
+</main>
+****
+
+<figure> O elemento figure é uma marcação de uso específico para a
+ inserção de uma figura. Para incluir a descrição dessa figura, 
+podemos utilizar o elemento <figcaption>. 
+***exemplo:
+<figure>
+  <img src=”http://meusite.com.br/assets/imagem.jpg” alt=”Imagem”>
+</figure>
+*** Exemplo de uso de <figure> com <figcaption>:
+
+<figure>
+   <img src=”http://meusite.com.br/assets/imagem.jpg” alt=”Imagem”>
+
+   <figcaption>Figura 1. Imagem</figcaption>
+</figure>
+***
+
+<footer> O elemento <footer> representa um rodapé de um documento,
+ como a área presente no final de uma página web. 
+Normalmente é utilizado para descrever informações de autoria, 
+como nome e contato do autor, e data de criação do conteúdo. 
+***exemplo:
+
+<footer>
+     <p>Escrito por Estevão Dias</p>
+     <p>Publicado em 25/03/2017 </p>
+</footer>
+****
+
+<a> A principal função do elemento <a> é descrever um link,
+ conectando os diversos documentos de um site e permitindo
+ a navegação por esse conteúdo. Normalmente esses documentos 
+estão relacionados por compartilharem um assunto em comum.
+ *** exemplo:
+<a href = "https://www.w3schools.com" target="_blank">  clique aqui para saber mais </a>
+***
+
+<em>O elemento <em> é utilizado quando desejamos enfatizar um trecho ou
+palavra no texto, indicando que ela contribui de forma mais relevante para o 
+sentido/compreensão do conteúdo. 
+***exemplo:
+<p>Você <em>tem certeza</em> que essa definição está correta?</p>
+***
+
+<strong>O elemento <strong> também é utilizado para destacar uma parte do
+ texto. Sua principal diferença em relação ao elemento <em> é que <em> pode
+ alterar o propósito de uma frase, como vimos anteriormente
+***exemplo:
+<p>Compreender esses elementos HTML é importante porque
+<strong>possibilita o desenvolvimento de soluções web modernas</strong>.</p>
+***
+<cite> e <q>
+O elemento <cite> é utilizado para declarar que naquele trecho há uma citação, 
+isto é, um trecho de texto que não foi escrito pelo autor do conteúdo. 
+Normalmente utiliza-se o <cite> em conjunto com o elemento <q>,
+responsável por apresentar o conteúdo retirado de outra fonte.
+***exemplo:
+<p>
+<q>Lorem ipsum dolor sit amet, consectetur </q> - <cite>http://br.lipsum.com/</cite>.
+</p>
+***
+
+<time>O elemento <time> é utilizado para representar datas. Assim, caso seja
+necessário informar a data em que um conteúdo foi escrito, podemos declarar 
+a tag <time> e acrescentar a ela o atributo datetime para escrever a data de
+ forma padronizada.
+*** exemplo:
+<time datetime=”2017-04-07”>4/7</time>
+****
+Exemplo prático
+
+A seguir temos um exemplo prático em que empregamos várias tags 
+semânticas para estruturar o conteúdo de uma página. 
+Neste caso, temos uma página de cursos, que contém um cabeçalho, 
+o corpo, dividido em seções, e um rodapé:
+
+01 <body>
+02     <header>
+03         <h1>Cursos de programação</h1>
+04     </header>
+05     <main>
+06         <section>
+07             <h2>Java</h2>
+08             <article>
+09                 <h3>Curso de JavaServer Faces</h3>
+10                 <p>Neste curso você aprenderá a desenvolver aplicações com JSF.</p>
+11             </article>
+12             <article>
+13                 <h3>Curso de Spring</h3>
+14                 <p>Neste curso você aprenderá utilizar o framework Spring.</p>
+15             </article>
+16         </section>
+17         <section>
+18             <h2>PHP</h2>
+19             <article>
+20                 <h3>Curso básico de PHP</h3>
+21                 <p>Conheça a linguagem de programação PHP.</p>
+22             </article>
+23             <article>
+24                 <h3>Curso de PDO</h3>
+25                 <p>Aprenda a acessar bancos de dados com PHP Data Objects.</p>
+26             </article>
+27         </section>
+28     </main>
+29     <footer>
+30         <p>MinhaEmpresa.com.br. Todos os direitos reservados.</p>
+31     </footer>
+32 </body>
+
+
+- CSS
+Cascading Style Sheets é um mecanismo para adicionar estilo a um 
+documento web. O código CSS pode ser aplicado diretamente nas tags ou f
+icar contido dentro das tags <style>. Também é possível, em vez de colocar
+ a formatação dentro do documento, criar um link para um arquivo CSS que
+ contém os estilos.
+
+Dentro do html adcionamos a tag <link rel="stylesheet" href="style.css">   para css para podermos estilizarmos a página web.
+  *** exemplo:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Título da pág </title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+
+</body>
+</html>
+
+-Qual a diferença entre CLASS e ID?
+Em HTML e CSS, há a possibilidade de aplicar estilos através de 'class' e 'id' 
+e, em JavaScript é possível indentificar algum elemento de uma página por 
+sua classe, id ou tag. Mas qual a diferença entre 'class' e 'id'?
+
+-O que são classes?
+As classes são uma forma de identificar um grupo de elementos. Através
+ delas, pode-se atribuir formatação a VÁRIOS elementos de uma vez.
+ ***Exemplo:
+Código HTML:
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+      <head>
+        <title></title>
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <div class="classe1">Div1</div>
+        <div class="classe1">Div2</div>
+        <div class="classe1">Div3</div>
+        <div class="classe1">Div4</div>
+        <div class="classe1">Div5</div>
+      </body>
+    </html>
+
+Código CSS:
+
+    .classe1 {
+      background: blue;
+    }
+
+
+**** Então, todas as 'divs' que estiverem com a classe "classe1" estarão com um background azul(blue).
+
+-O que são ids?
+As ids são uma forma de identificar um elemento, e devem ser ÚNICAS para 
+cada elemento. É como se fossem impressões digitais de nossos dedos ou 
+RGs. Através delas, pode-se atribuir formatação a um elemento em especial. 
+****Exemplo:
+Código HTML:
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+      <head>
+        <title></title>
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <div id="idUm">Div1</div>
+        <div id="idDois">Div2</div>
+        <div id="idTres">Div3</div>
+        <div id="idQuatro">Div4</div>
+      </body>
+    </html>
+
+Código CSS:
+
+    #idUm {
+      background: blue;
+    }
+    #idDois {
+      background: yellow;
+    }
+    #idTres {
+      background: lightblue;
+    }
+    #idQuatro {
+      background: lightgreen;
+    }
+****Então, como mostra o código acima, não podemos repetir uma 'id'.
+ Deve ser especialmente única para cada elemento.
+
+--BOX MODEL--
+importante pesquisar 
+Content - O conteúdo da caixa, onde o texto e as imagens aparecem
+Padding - Limpa uma área ao redor do conteúdo. O forro é transparente
+Border - Uma borda que contorna o preenchimento e o conteúdo
+Margin- Limpa uma área fora da borda. A margem é transparente
+*** exemplo:
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+****
+- Alguns comandos do CSS:
+ color: cor da fonte
+-font-family: para alterar a fonte do texto
+-font-size: para alterar o tamanhodo texto
+-font-style: alterar a aparencia do texto
+-font-weight: alterar o peso do texto
+-font-variant: fontes maiúsculas de menor altura
+-text-transform: alternar o texto entre maíusculo e mínusculo
+-text-decoration: destaque no texto, coloca linhas
+-list-style-type: muda os simbolos da lista ordenada e lista não ordernada <ol> <ul>
+-border-raddius: serve para deixar as bordas das imagens arrendondadas
+-border-width: define a espessura da borda
+-border-style: define o estilo da borda
+-border-color: define a cor da borda
+-width,height {Altura e Largura}	
+-max-width, max-height {Altura máxima e Largura máxima}
+-text aling{alinhar texto}
+- margin-top: define a margem superior;
+- margin-right: define a margem direita;
+- margin-bottom: define a margem inferior;
+- margin-left: define a margem esquerda;
+- margin: maneira abreviada para definir todas as 4 margens.
+
+
+**/*/*/*/*/Links de referencias:
+https://www.maujor.com/
+https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065
+https://www.w3schools.com/html/default.asp
+https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility/HTML
+https://tableless.github.io/iniciantes/manual/css/class-id.html
+https://www.w3schools.com/css/default.asp
+https://www.w3schools.com/css/css_boxmodel.asp
+
+
+
+
+

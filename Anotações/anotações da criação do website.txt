@@ -1,0 +1,16 @@
+Criação do website atras da aula de "Introdução a criação de wevsites com 
+HTML5 e CSS3" pelo curso Digital Innovation One.
+Utilizamos algumas tag's semântincos do HTML como:
+<header>
+<section>
+<article>
+<aside>
+<footer>
+Durante a aula usamos também o tag <a> para a inserir um link no site e
+dentro da tag <a> utilizamos o target="_blank" , para que o usuario possa 
+abrir o link em um nova aba.
+Dentro das tag <img> também foi inserido o comando alt para que a imagem 
+pudesse ter uma descrição.
+Utilização do flexbox para criação do rodapé.
+a ideia até o momento é criar uma pagina toda somente com html e css.
+
